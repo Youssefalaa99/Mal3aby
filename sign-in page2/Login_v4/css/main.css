@@ -135,6 +135,13 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
+
+.logo-img{
+  width: 20%;
+  position: relative;
+  right: 50px;
+}
+
 .txt1 {
   font-family: Poppins-Regular;
   font-size: 14px;
@@ -178,14 +185,16 @@ iframe {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .wrap-login100 {
-  width: 500px;
+  width: 700px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
   overflow: hidden;
 }
+
 
 
 /*------------------------------------------------------------------
@@ -481,3 +490,13 @@ iframe {
     padding-right: 15px;
   }
 } 
+
+.alert {
+  width: 800px;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 10px;
+  position: static;
+  display: none;
+}
