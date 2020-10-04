@@ -186,6 +186,21 @@
             </div>
         </div>
 
+        <div class="d-flex justify-content-between pb-3" >
+            <div>
+                <input type="radio" id="admin" name="user" value="admin">
+                <label for="admin">Admin</label>
+            </div>
+            <div>
+                <input type="radio" id="owner" name="user" value="owner">
+                <label for="owner">Owner</label>
+            </div>
+            <div>
+                <input type="radio" id="user" name="user" value="user" checked>
+                <label for="user">User</label>
+            </div>
+        </div>
+
         <div class="d-flex justify-content-center pb-3">
                 <button type="submit" class="btn btn-primary">
                     {{ __('Login') }}
@@ -200,15 +215,9 @@
             @endif
         </div>
 
-        <div class="form-group">
-            <label class="form-check-label">
-                {{ __("Don't Have An Account? ") }}
-            </label>
-
-            <a class="btn btn-link" href="/register">
-                {{ __('Sign Up') }}
-            </a>
-        </div>
+        <a class="btn btn-link d-flex justify-content-center" href="/register">
+            {{ __('Sign Up!') }}
+        </a>
     </form>
 </div>
 @endsection
