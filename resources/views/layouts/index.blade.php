@@ -59,11 +59,9 @@
 <body>
     <div id="app" class="limiter">
         <div class="container-login100" style="background-image: url('mypackage/images/background2.jpg');">
-            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-                <main class="py-4">
-                    @yield('content')
-                </main>
-            </div>
+            <main class="py-4">
+                @yield('content')
+            </main>
         </div>
     </div>
 </body>

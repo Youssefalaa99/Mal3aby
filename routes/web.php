@@ -31,12 +31,6 @@ Route::get('/contact',[PagesController::class, 'contact']);
 Route::get('/register',[PagesController::class, 'register']);
 
 // Route::resource('','LoginController');
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
 
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

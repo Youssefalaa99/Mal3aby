@@ -189,6 +189,13 @@ iframe {
 }
 
 .wrap-login100 {
+  width: 500px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.wrap-reg100 {
   width: 700px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
@@ -199,6 +206,13 @@ iframe {
 
 /*------------------------------------------------------------------
 [ Form ]*/
+
+.login100-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .login100-form {
   width: 100%;
