@@ -141,7 +141,7 @@
 
 <!--------------------------------------------------------------------------------------->
 @section('content')
-<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+<div class="wrap-reg100 p-l-55 p-r-55 p-t-65 p-b-54">
     <form method="POST" action="{{ route('login') }}" class="login100-form validate-form">
         @csrf
         <img src="mypackage/images/logo4.jpg" alt="Login" class="login100-logo p-b-40">
@@ -150,7 +150,7 @@
             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
             <div class="col-md-6">
-                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Type Your Email">
 
                 @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -164,7 +164,7 @@
             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
             <div class="col-md-6">
-                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Type Your Password">
 
                 @error('password')
                     <span class="invalid-feedback" role="alert">
