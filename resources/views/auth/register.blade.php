@@ -68,6 +68,18 @@
                 @enderror --}}
             </div>
         </div>
+            
+        <div class="form-group row">
+            <label class="col-md-4 col-form-label text-md-right mr-3">{{ __('Register As: ') }}</label>
+            <div class="p-2">
+                <input type="radio" id="owner" name="type" value="owner">
+                <label for="owner">Owner</label>
+            </div>
+            <div class="p-2">
+                <input type="radio" id="user" name="type" value="user" checked>
+                <label for="user">User</label>
+            </div>
+        </div>
 
         <div class="form-group row mb-4">
             <div class="col-md-6 offset-md-4">

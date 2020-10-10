@@ -8,6 +8,7 @@ class PagesController extends Controller
 {
     public function index(){
         return view('auth.login');
+        
     }
 
     public function about(){
@@ -19,6 +20,6 @@ class PagesController extends Controller
     }
 
     public function register(){
-        return view('pages.register');
+        return view('auth.register');
     }
 }

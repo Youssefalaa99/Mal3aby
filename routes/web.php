@@ -26,11 +26,10 @@ Route::get('/users/{id}',function($id){
 */
 
 Route::get('/', [PagesController::class, 'index']);
-Route::get('/about',[PagesController::class, 'about']);
-Route::get('/contact',[PagesController::class, 'contact']);
+Route::get('/about',[PagesController::class, 'about'])->name('about')->middleware('auth');
+Route::get('/contact',[PagesController::class, 'contact'])->name('contact')->middleware('auth');
 Route::get('/register',[PagesController::class, 'register']);
-
-// Route::resource('','LoginController');
-
 Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/home2', [App\Http\Controllers\HomeController::class, 'index2'])->name('home2')->middleware('auth');
+Route::get('/home3', [App\Http\Controllers\HomeController::class, 'index3'])->name('home3')->middleware('auth');

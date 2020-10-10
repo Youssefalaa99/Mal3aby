@@ -3,11 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use App\Models\TestUser;
 
-
-class RegisterController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +13,7 @@ class RegisterController extends Controller
      */
     public function index()
     {
-        return view('pages.register');
+        return view('home3');
     }
 
     /**
